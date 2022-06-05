@@ -16,7 +16,7 @@ while True:
        print(f"Your guess {guess_number} is incorrect.Number should be bigger")
        left_boundry = guess_number
     guess_number = (left_boundry + right_boundry) // 2
-print(f"It took you {count} guesses")  
+print(f"It took you {count} guesses, which is less than 20!")  
     
        
         
