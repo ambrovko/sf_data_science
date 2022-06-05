@@ -10,7 +10,7 @@ def random_predict(number:int=1)-> int:
     """
     number = np.random.randint(1,101) 
     count = 0
-    guess_number = int(input("Guess the number from 1 to 100 22\n"))
+    guess_number = int(input("Guess the number from 1 to 100 \n"))
     left_boundry = 0
     right_boundry = 100
     while True:
