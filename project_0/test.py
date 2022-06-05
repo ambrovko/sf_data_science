@@ -27,8 +27,4 @@ def random_predict(number:int=1)-> int:
         guess_number = (left_boundry + right_boundry) // 2
     return(count)
 print(f"It took you {random_predict()} guesses, which is less than 20!") 
-    
-       
-        
-
 
