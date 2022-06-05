@@ -1,5 +1,5 @@
 import numpy as np
-number = np.random.randint(1,101) #zagadivaem chislo
+number = np.random.randint(1,101) 
 count = 0
 guess_number = int(input("Guess the number from 1 to 100 "))
 left_boundry = 0
