@@ -1,5 +1,5 @@
 import numpy as np
-def number_guessing(x)-> int:
+def number_guessing(number):
     number = np.random.randint(1,101) #zagadivaem chislo
     count = 0
     guess_number = int(input("Guess the number from 1 to 100 "))
@@ -18,4 +18,4 @@ def number_guessing(x)-> int:
             left_boundry = guess_number
         guess_number = (left_boundry + right_boundry) // 2
     return(count)
-print(number_guessing(1))
+print(number_guessing())
