@@ -8,3 +8,12 @@ display(melb_df['WeekdaySale'])
 display(melb_df['WeekdaySale'].value_counts())
 weekend_count = melb_df[(melb_df['WeekdaySale'] == 5) | (melb_df['WeekdaySale'] == 6)].shape[0]
 print(weekend_count)
+def get_weekend(weekday):
+    if weekday == 5 or weekday == 6:
+        return 1
+    else:
+        return 0
+melb_df['Weekend'] = melb_df['WeekdaySale'].apply(get_weekend)
+display(melb_df['Weekend'])
+aver_price = melb_df[melb_df['Weekend'] == 1]['Price'].mean()
+print(round(aver_price))
